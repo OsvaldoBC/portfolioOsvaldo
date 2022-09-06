@@ -5,7 +5,23 @@ openMenu.addEventListener('click', () => {
 });
 
 const closeMenu = document.querySelector('.close_menu');
-//const modalClose = document.querySelector('.box-menu-1');
+
 closeMenu.addEventListener('click', () => {
+  modalMenu.style.left = '-100%';
+});
+
+const itemPortfolio = document.querySelector('.itemPortfolio');
+const itemAboutme = document.querySelector('.itemAboutme');
+const itemContact = document.querySelector('.itemContact');
+
+itemPortfolio.addEventListener('click', () => {
+  modalMenu.style.left = '-100%';
+});
+
+itemAboutme.addEventListener('click', () => {
+  modalMenu.style.left = '-100%';
+});
+
+itemContact.addEventListener('click', () => {
   modalMenu.style.left = '-100%';
 });

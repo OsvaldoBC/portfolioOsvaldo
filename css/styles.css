@@ -11,18 +11,21 @@ body {
 }
 
 .navbar {
+  width: 100%;
   display: flex;
   text-decoration: none;
   flex-wrap: wrap;
-  justify-content:space-between;
   align-items: center;
   color: #6070ff;
   font-size: 18px;
   transition: 250ms height ease-in-out;
+  padding: 24px;
+  position: fixed;
+  justify-content: space-between;
+  background: #fff;
 }
 
 .box-menu-1 {
-  /*display: none;*/
   width: 100%;
   background-color: #6070ffe3;
   margin: 0;
@@ -33,7 +36,6 @@ body {
   box-sizing: border-box;
   padding: 40px;
   transition: 250ms height ease-in-out;
-
 }
 
 .box-menu-1 a {
