@@ -28,6 +28,7 @@ body {
 .box-menu-1 {
   width: 100%;
   background-color: #6070ffe3;
+  backdrop-filter: blur(2px);
   margin: 0;
   position: fixed;
   top: 0;
@@ -42,6 +43,16 @@ body {
   color: white;
   text-decoration: none;
   font-size: 32px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.itemAboutme {
+  margin-bottom: 25px;
+}
+
+.itemPortfolio {
+  margin-bottom: 25px;
 }
 
 .close_menu {
