@@ -1,0 +1,38 @@
+let projectData = [{
+  Name: 'Tonic',
+  Company: 'CANOPY',
+  role:  'Back End Dev',
+  year:  '2015',
+  description: 'A daily selection of privately personalized reads; no accounts or sign-ups require',
+  tecnologies: ['html', 'css', 'javaScript'],
+  image:  'Snapshoot-Portfolio.png',
+},
+  {
+  Name: 'Multi-Post-Stories',
+  Company: 'CANOPY',
+  role:  'Back End Dev',
+  year:  '2015',
+  description: 'A daily selection of privately personalized reads; no accounts or sign-ups require',
+  tecnologies: ['html', 'css', 'javaScript'],
+  image:  'Snapshoot-Portfolio.png',
+},
+    {
+  Name: 'Tonic',
+  Company: 'CANOPY',
+  role:  'Back End Dev',
+  year:  '2015',
+  description: 'A daily selection of privately personalized reads; no accounts or sign-ups require',
+  tecnologies: ['html', 'css', 'javaScript'],
+  image:  'Snapshoot-Portfolio.png',
+},
+  {
+  Name: 'Multi-Post-Stories',
+  Company: 'CANOPY',
+  role:  'Back End Dev',
+  year:  '2015',
+  description: 'A daily selection of privately personalized reads; no accounts or sign-ups require',
+  tecnologies: ['html', 'css', 'javaScript'],
+  image:  'Snapshoot-Portfolio.png',
+},
+];
+console.log(projectData);
