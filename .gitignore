@@ -2,3 +2,6 @@
 node_module/
 
 # ignore md file
+node_modules
+
+hint-report

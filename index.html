@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portfolio-setup</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,11 +15,12 @@
         <!--  Begin HEADER     -->
         <nav class="navbar">
           <a class="logo-osvaldo" href="https://github.com/OsvaldoBC/">Osvaldo</a>
-          <a class="box-menu" href="#Menu"><img src="./img/Union.png" alt="Menu"></a>
+          <a class="box-menu" href="#Menu"> <img src="./img/Union.png" alt="Menu"></a>
           <ul class="box-menu-1">
-            <li> <a href="">Portafolio</a> </li>
-            <li> <a href="">About</a>      </li>
-            <li> <a href="">Contact</a>    </li>
+            <li class="close_menu"> <img src="img/close_menu.png" alt="Close"/></li>
+            <li class="itemPortfolio"> <a href="#portfolio">Portafolio</a> </li>
+            <li class="itemAboutme"> <a href="#aboutme">About</a> </li>
+            <li class="itemContact"> <a href="#contact">Contact</a> </li>
           </ul>
         </nav>
       </header>
@@ -42,7 +43,7 @@
       </main>
 <!-- End Main Page  -->
 <!--  Start  Page 1 -->
-      <section class="container1">
+      <section class="container1" id="portfolio">
           <div class="card1">
              <div class="portfolio"><img src="./img/Snapshoot-Portfolio.png" alt="portfolio"></div>
              <div class="portfolio1"><img src="./img/Snapshoot-Portfolio-big.png" alt="portfolio1"></div>
@@ -227,7 +228,7 @@
         </div>
 <!-- end page 4 ....................................... -->
 <!-- Start about myself  .............................  -->
-      <div class="card1">
+      <div class="card1" id="aboutme">
         <div class="contenido1">
           <h2 class="about-me">About <br>Myself</h2>
           <p class="about">Hello I’m a software developer! I can help you build⁄ a product , feature or website Look through some of my work⁄ and experience! If you like what you see and have a project you need⁄ coded, don’t hestiate to contact me.</p>
@@ -272,7 +273,7 @@
      </div>
 <!-- End about myself...................................... -->
 <!-- Start Contact Form ........... -->
-      <section class="form-container">
+      <section class="form-container" id="contact">
         <div class="form">
             <form action="https://formspree.io/f/xgeqvalw" method="post">
             <div class="contenido-form">
@@ -289,5 +290,7 @@
         </div>
       </section>
   <!-- End Contact Form  -->
+  <script src="./js/menu.js"></script>
+  <script src="./js/project-data.js"></script>
   </body>
 </html>
