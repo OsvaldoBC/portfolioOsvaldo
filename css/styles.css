@@ -141,7 +141,6 @@ body {
   text-decoration: none;
   font-size: 32px;
   font-weight: 600;
-
 }
 
 .itemPortfolio {
@@ -649,7 +648,7 @@ button.form_btn:hover {
 }
 
  .popimge-desk {
-  display: none;
+   display: none;
 }
 
 .hidden {
@@ -660,7 +659,6 @@ button.form_btn:hover {
   .portfolio {
     display: flex;
     width:auto;
-
   }
 
   .portfolio1 {
@@ -804,7 +802,6 @@ button.form_btn:hover {
     background-repeat: no-repeat;
     background-size: contain;
   }
-
 
   .containerobj {
     width: auto;
