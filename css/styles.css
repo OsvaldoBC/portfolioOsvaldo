@@ -647,7 +647,6 @@ button.form_btn:hover {
   font-weight: 700;
 }
 
-
 .popimge-desk {
   display: none;
 }
@@ -659,7 +658,6 @@ button.form_btn:hover {
 /*      Desktop Style     */
 
 @media (min-width: 768px) {
-
   .portfolio {
     display: flex;
     width: auto;
@@ -707,11 +705,11 @@ button.form_btn:hover {
     margin-top: 30px;
   }
 
- .about {
+  .about {
     width: 500px;
   }
 
- .contenido-mobil {
+  .contenido-mobil {
     display: none;
   }
 
