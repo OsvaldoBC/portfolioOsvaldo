@@ -655,8 +655,11 @@ button.form_btn:hover {
 .hidden {
   display: none;
 }
+
 /*      Desktop Style     */
+
 @media (min-width: 768px) {
+
   .portfolio {
     display: flex;
     width: auto;
@@ -709,7 +712,7 @@ button.form_btn:hover {
   }
 
  .contenido-mobil {
-    display: none};
+    display: none;
   }
 
   .contenido-desktop {
