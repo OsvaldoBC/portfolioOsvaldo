@@ -67,13 +67,9 @@
   font: inherit;
 }
 
-
-
-
 body {
   font-family: 'poppins', sans-serif;
 }
-
 
 .modal-buttons {
   display: flex;
@@ -154,7 +150,6 @@ body {
 
 .itemAboutme {
   margin-bottom: 20px;
-
 }
 
 .close_menu {
@@ -658,12 +653,9 @@ button.form_btn:hover {
 }
 
 .hidden {
-  display: none
+  display: none;
 }
-
-
 /*      Desktop Style     */
-
 @media (min-width: 768px) {
   .portfolio {
     display: flex;
@@ -850,33 +842,33 @@ button.form_btn:hover {
   }
 
   .popimg {
-      display: flex;
-      justify-content: left;
+    display: flex;
+    justify-content: left;
     }
 
-    .popdescrip {
-      font-weight: 400;
-      font-size: 15px;
-      line-height: 24px;
-      color: #344563;
-      margin-left: 16px;
-      margin-right: 16px;
-      display: flex;
-      width: 600px;
+  .popdescrip {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #344563;
+    margin-left: 16px;
+    margin-right: 16px;
+    display: flex;
+    width: 600px;
     }
 
-    .popsmallbuttons {
-      display: flex;
-      flex-direction: row;
-      align-items: flex-end;
+  .popsmallbuttons {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
     }
 
-    .popimge-mob {
-      display: none;
+  .popimge-mob {
+    display: none;
     }
 
     .popimge-desk {
-      display: flex;
+    display: flex;
     }
 
 }
