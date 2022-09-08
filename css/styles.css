@@ -1,13 +1,114 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+} */
+
+:root {
+  --very-light-purple: hsl(240, 100%, 96%);
+  --light-purple: hsl(235, 100%, 83%);
+  --medium-purple: hsl(234, 100%, 75%);
+  --dark-purple: hsl(234, 100%, 69%);
+  --color-border: hsl(218, 13%, 48%);
+  --color-icon: hsl(218, 20%, 39%);
+  --color-nav-p: hsl(218, 31%, 30%);
+  --color-heading-mobile: hsl(218, 54%, 20%);
+  --color-heading-desktop: hsl(218, 76%, 15%);
+  --light-blue: hsl(234, 97%, 62%);
+  --bright-blue: hsl(235, 72%, 48%);
+  --color-white: hsl(0, 0%, 100%);
+  --bg-body: hsl(0, 0%, 90%);
+  --color-light-gray: hsl(217, 13%, 74%);
+  --color-smoke-white: hsl(240, 100%, 96%);
+  --card-border: hsl(218, 14%, 89%);
+  --fs-tiny: 0.75em;
+  --fs-100: 0.8215em;
+  --fs-200: 0.9375em;
+  --fs-300: 1em;
+  --fs-400: 1.0625em;
+  --fs-500: 1.125;
+  --fs-600: 1.25em;
+  --fs-700: 2em;
+  --fs-800: 2.5em;
+  --fs-900: 3em;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+
+  --fw-lighter: 400;
+  --fw-regular: 500;
+  --fw-semi-bold: 600;
+  --fw-bold: 700;
+  --size-100: 0.5em;
+  --size-200: 1em;
+  --size-300: 1.5em;
+  --size-400: 2em;
+  --size-500: 2.5em;
+  --size-600: 3em;
+  --size-700: 4em;
+  --size-800: 6em;
+  --size-900: 7em;
+  --size-xl: 9em;
 }
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+
+
 
 body {
   font-family: 'poppins', sans-serif;
+}
+
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  padding-top: 15px;
+  border-top: 0.1px solid rgba(128, 128, 128, 0.2);
+}
+
+.btn {
+  font-size: 1.0625rem;
+  font-weight: var(--fw-regular);
+  color: hsl(223, 63%, 50%);
+  background-color: var(--color-white);
+  border: 1px solid var(--dark-purple);
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: 0.2s ease-in-out;
+}
+
+.live,
+.source {
+  display: flex;
+  justify-content: space-around;
+  text-decoration: none;
+  flex: 50%;
+  font-family: Poppins, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: center;
+}
+
+.img-btn {
+  font-size: 12px;
 }
 
 .navbar {
@@ -155,6 +256,12 @@ ul {
 .container1 {
   width: auto;
   height: auto;
+  margin-bottom: 40px;
+}
+
+.containerobj {
+  width: auto;
+  height: auto;
 }
 
 .card {
@@ -263,6 +370,7 @@ ul {
   margin-left: 16px;
   transition-property: font-size;
   transition-duration: 2s;
+  width: fit-content;
 }
 
 .see:hover {
@@ -445,12 +553,6 @@ button.form_btn:hover {
   color: white;
 }
 
-.garden {
-  display: grid;
-  grid-template-rows: 25% 25% 25% 25%;
-  row-gap: 20px;
-}
-
 .contenido-form {
   display: flex;
   flex-direction: column;
@@ -463,12 +565,108 @@ button.form_btn:hover {
   flex-direction: column;
 }
 
+.popuphidden {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  left: 0;
+}
+
+.popupcard {
+  background-color: #fff;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  height: auto;
+}
+
+.poptitle {
+  color: #172b4d;
+  font-size: 32px;
+  font-weight: 700;
+  margin-left: 16px;
+}
+
+.popclose {
+  align-content: end;
+  float: right;
+}
+
+.popdetail {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 12px;
+  color: #7a869a;
+  margin-left: 16px;
+}
+
+.popimg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popdescrip {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #344563;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.popsmallbuttons {
+  display: flex;
+  text-align: left;
+  gap: 10px;
+  border: none;
+  padding-left: 0.5px;
+  margin-bottom: 10px;
+  margin-left: 16px;
+}
+
+.pop-button-small {
+  align-items: center;
+  align-content: center;
+  background: #ebebff;
+  border: none;
+  border-radius: 8px;
+  color: #6070ff;
+  font-size: 12px;
+  padding: 3px 5px 3px 5px;
+}
+
+.popbutton-big {
+  background-color: #fff;
+  padding: 12px;
+  gap: 10px;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  color: #396df2;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+ .popimge-desk {
+  display: none;
+}
+
+.hidden {
+  display: none
+}
+
+
 /*      Desktop Style     */
 
 @media (min-width: 768px) {
   .portfolio {
     display: flex;
-    display: none;
+    width:auto;
+
   }
 
   .portfolio1 {
@@ -495,10 +693,18 @@ button.form_btn:hover {
 
   .contenido1 {
     display: flex;
-    width: 40%;
+    width: 50%;
     height: auto;
     flex-direction: column;
-    margin-left: 100px;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }
+
+  .container1 {
+    display: flex;
+    width: auto;
+    height: auto;
+    margin-bottom: 40px;
   }
 
   .about-me {
@@ -605,6 +811,12 @@ button.form_btn:hover {
     background-size: contain;
   }
 
+
+  .containerobj {
+    width: auto;
+    height: auto;
+  }
+
   .devl {
     display: flex;
     flex-direction: column;
@@ -623,6 +835,7 @@ button.form_btn:hover {
     gap: 20px;
     color: #344563;
     padding-right: 1px;
+    left: 0;
   }
 
   .box-menu-1 a {
@@ -633,4 +846,35 @@ button.form_btn:hover {
     font-size: 15px;
     color: #344563;
   }
+
+  .popimg {
+      display: flex;
+      justify-content: left;
+    }
+
+    .popdescrip {
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 24px;
+      color: #344563;
+      margin-left: 16px;
+      margin-right: 16px;
+      display: flex;
+      width: 600px;
+    }
+
+    .popsmallbuttons {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+    }
+
+    .popimge-mob {
+      display: none;
+    }
+
+    .popimge-desk {
+      display: flex;
+    }
+
 }
