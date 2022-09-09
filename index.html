@@ -102,11 +102,11 @@
             <p class="form-p"> If you have an application you are interested in developing, <br> a feature that you need built or a project that<br> needs coding. I’d love to help with it
             </p>
             <input type="text" name="fullname" class="form-control" placeholder="Osvaldo Jose Barrios" maxlength="30" required>
-            <input type="email" name="emailaddress" class="form-control" placeholder="su-correro@gmail.com" required>
+            <input id="email" type="email" name="emailaddress" class="form-control" placeholder="su-correro@gmail.com" required>
             <textarea  class="form-control" name="txt_area" placeholder="Write your message here" maxlength="500" required></textarea>
           </div>
             <button type="submit" class="form_btn"> Get it touch </button>
-
+            <p id="error"></p>
           </form>
         </div>
       </section>
@@ -157,5 +157,6 @@
 
   <script src="./js/menu.js"></script>
   <script src="./js/project-data.js"></script>
+  <script src="./js/validateForm.js"></script>
   </body>
 </html>
