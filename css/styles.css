@@ -63,7 +63,7 @@
 
 body {
   font-family: 'poppins', sans-serif;
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
 }
 
 .modal-buttons {
@@ -248,7 +248,7 @@ ul {
 .container1 {
   margin: 25px;
   padding: 20px;
-  background-color:white;
+  background-color: white;
 }
 
 .containerobj {
@@ -275,11 +275,10 @@ ul {
   width: 100%;
   padding: 16px;
   border: 2px solid #dfe1e6;
-  border-radius: 16px;
   background-color: #fff;
   flex-direction: column;
   justify-content: space-around;
-  border-radius: 0 60px 0 0px;
+  border-radius: 0 60px 0 0;
 }
 
 .portfolio {
