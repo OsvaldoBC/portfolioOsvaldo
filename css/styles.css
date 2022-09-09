@@ -528,6 +528,12 @@ ul {
   height: 170px;
 }
 
+.form_btn {
+  margin-left: 200px;
+  align-items: center;
+  align-content: center;
+}
+
 button.form_btn {
   background-color: #fff;
   padding: 12px;
