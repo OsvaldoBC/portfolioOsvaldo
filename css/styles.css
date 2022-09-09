@@ -1,13 +1,105 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
+:root {
+  --very-light-purple: hsl(240, 100%, 96%);
+  --light-purple: hsl(235, 100%, 83%);
+  --medium-purple: hsl(234, 100%, 75%);
+  --dark-purple: hsl(234, 100%, 69%);
+  --color-border: hsl(218, 13%, 48%);
+  --color-icon: hsl(218, 20%, 39%);
+  --color-nav-p: hsl(218, 31%, 30%);
+  --color-heading-mobile: hsl(218, 54%, 20%);
+  --color-heading-desktop: hsl(218, 76%, 15%);
+  --light-blue: hsl(234, 97%, 62%);
+  --bright-blue: hsl(235, 72%, 48%);
+  --color-white: hsl(0, 0%, 100%);
+  --bg-body: hsl(0, 0%, 90%);
+  --color-light-gray: hsl(217, 13%, 74%);
+  --color-smoke-white: hsl(240, 100%, 96%);
+  --card-border: hsl(218, 14%, 89%);
+  --fs-tiny: 0.75em;
+  --fs-100: 0.8215em;
+  --fs-200: 0.9375em;
+  --fs-300: 1em;
+  --fs-400: 1.0625em;
+  --fs-500: 1.125;
+  --fs-600: 1.25em;
+  --fs-700: 2em;
+  --fs-800: 2.5em;
+  --fs-900: 3em;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+
+  --fw-lighter: 400;
+  --fw-regular: 500;
+  --fw-semi-bold: 600;
+  --fw-bold: 700;
+  --size-100: 0.5em;
+  --size-200: 1em;
+  --size-300: 1.5em;
+  --size-400: 2em;
+  --size-500: 2.5em;
+  --size-600: 3em;
+  --size-700: 4em;
+  --size-800: 6em;
+  --size-900: 7em;
+  --size-xl: 9em;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  font: inherit;
 }
 
 body {
   font-family: 'poppins', sans-serif;
+  background-color: #e5e5e5;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  padding-top: 15px;
+  border-top: 0.1px solid rgba(128, 128, 128, 0.2);
+}
+
+.btn {
+  font-size: 1.0625rem;
+  font-weight: var(--fw-regular);
+  color: hsl(223, 63%, 50%);
+  background-color: var(--color-white);
+  border: 1px solid var(--dark-purple);
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: 0.2s ease-in-out;
+}
+
+.live,
+.source {
+  display: flex;
+  justify-content: space-around;
+  text-decoration: none;
+  flex: 50%;
+  font-family: Poppins, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: center;
+}
+
+.img-btn {
+  font-size: 12px;
 }
 
 .navbar {
@@ -44,15 +136,14 @@ body {
   text-decoration: none;
   font-size: 32px;
   font-weight: 600;
-  margin-top: 20px;
-}
-
-.itemAboutme {
-  margin-bottom: 25px;
 }
 
 .itemPortfolio {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
+}
+
+.itemAboutme {
+  margin-bottom: 20px;
 }
 
 .close_menu {
@@ -86,20 +177,21 @@ body {
 .container {
   display: flex;
   width: 100%;
-  background-image: url(../img/header-shapes.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
   height: 780px;
 }
 
 .hero {
   display: flex;
-  width: 100%;
+  width: auto%;
   height: auto;
+  background-image: url(../img/header-shapes.png);
+  background-repeat: no-repeat;
+  background-position: center;
   flex-direction: column;
   justify-content: center;
   overflow: hidden;
+  background-color: white;
+  border-radius: 0 0 0 60px;
 }
 
 .title {
@@ -154,6 +246,12 @@ ul {
 }
 
 .container1 {
+  margin: 25px;
+  padding: 20px;
+  background-color: white;
+}
+
+.containerobj {
   width: auto;
   height: auto;
 }
@@ -177,10 +275,10 @@ ul {
   width: 100%;
   padding: 16px;
   border: 2px solid #dfe1e6;
-  border-radius: 16px;
   background-color: #fff;
   flex-direction: column;
   justify-content: space-around;
+  border-radius: 0 60px 0 0;
 }
 
 .portfolio {
@@ -225,15 +323,13 @@ ul {
   margin-right: 24px;
   height: auto;
   width: auto;
-  margin-left: 16px;
-  margin-top: 1px;
 }
 
 .buttons {
   display: flex;
   text-align: left;
   border: none;
-  margin-left: 16px;
+  margin: 16px 16px;
   padding-top: 10px;
   padding-left: 1px;
 }
@@ -264,6 +360,7 @@ ul {
   margin-left: 16px;
   transition-property: font-size;
   transition-duration: 2s;
+  width: fit-content;
 }
 
 .see:hover {
@@ -446,12 +543,6 @@ button.form_btn:hover {
   color: white;
 }
 
-.garden {
-  display: grid;
-  grid-template-rows: 25% 25% 25% 25%;
-  row-gap: 20px;
-}
-
 .contenido-form {
   display: flex;
   flex-direction: column;
@@ -464,12 +555,124 @@ button.form_btn:hover {
   flex-direction: column;
 }
 
+.popuphidden {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  left: 0;
+  background-color: #c1c7d0a6;
+  backdrop-filter: blur(3px);
+  height: 100vh;
+}
+
+.popupcard {
+  background-color: #fff;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  height: auto;
+  overflow-y: scroll;
+  margin: 20px;
+}
+
+.poptitle {
+  color: #172b4d;
+  font-size: 32px;
+  font-weight: 700;
+  margin-left: 16px;
+}
+
+.popclose {
+  align-content: end;
+  float: right;
+}
+
+.popdetail {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 12px;
+  color: #7a869a;
+  margin-left: 16px;
+}
+
+.popimg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popdescrip {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #344563;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.popsmallbuttons {
+  display: flex;
+  text-align: left;
+  gap: 10px;
+  border: none;
+  padding-left: 0.5px;
+  margin-bottom: 10px;
+  margin-left: 16px;
+}
+
+.pop-button-small {
+  align-items: center;
+  align-content: center;
+  background: #ebebff;
+  border: none;
+  border-radius: 8px;
+  color: #6070ff;
+  font-size: 12px;
+  padding: 3px 5px 3px 5px;
+}
+
+.popbutton-big {
+  background-color: #fff;
+  padding: 12px;
+  gap: 10px;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  color: #396df2;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.popimge-desk {
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+
 /*      Desktop Style     */
 
 @media (min-width: 768px) {
   .portfolio {
     display: flex;
-    display: none;
+    width: auto;
+  }
+
+  .hero {
+    display: flex;
+    width: auto%;
+    height: auto;
+    background-image: url(../img/header-bg.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 0 0 0 60px;
   }
 
   .portfolio1 {
@@ -491,15 +694,22 @@ button.form_btn:hover {
   }
 
   .project-detail {
-    width: 569px;
+    margin: 30px 20px 10px 20px;
   }
 
   .contenido1 {
     display: flex;
-    width: 40%;
     height: auto;
     flex-direction: column;
-    margin-left: 100px;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }
+
+  .container1 {
+    margin: 25px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1050px;
   }
 
   .about-me {
@@ -549,10 +759,6 @@ button.form_btn:hover {
     display: flex;
     color: white;
     font-size: 40px;
-  }
-
-  .hero {
-    height: 916px;
   }
 
   .form_btn {
@@ -606,6 +812,11 @@ button.form_btn:hover {
     background-size: contain;
   }
 
+  .containerobj {
+    width: auto;
+    height: auto;
+  }
+
   .devl {
     display: flex;
     flex-direction: column;
@@ -624,6 +835,7 @@ button.form_btn:hover {
     gap: 20px;
     color: #344563;
     padding-right: 1px;
+    left: 0;
   }
 
   .box-menu-1 a {
@@ -633,5 +845,67 @@ button.form_btn:hover {
     text-decoration: none;
     font-size: 15px;
     color: #344563;
+  }
+
+  .popimg {
+    display: flex;
+    justify-content: center;
+  }
+
+  .popuphidden {
+    width: 100%;
+    height: 100vh;
+    background-color: #c1c7d06a;
+    backdrop-filter: blur(3px);
+  }
+
+  .popupcard {
+    overflow-y: scroll;
+    width: 90%;
+    height: 90vh;
+    margin: 30px auto;
+  }
+
+  .popimge {
+    display: flex;
+    justify-content: left;
+    width: 60%;
+    height: auto;
+    margin: 16px 30px 16px 30px;
+  }
+
+  .sect {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .popdescrip {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #344563;
+    margin-left: 40px;
+    margin-right: 16px;
+  }
+
+  .popbuttons {
+    float: right;
+  }
+
+  .popsmallbuttons {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin: 30px 1px 30px 1px;
+  }
+
+  .popbutton-big {
+    margin-left: 1px;
+  }
+
+  .poplinks {
+    gap: 8px;
+    margin-left: 1px;
   }
 }

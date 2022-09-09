@@ -7,9 +7,18 @@ git clone git@github.com:OsvaldoBC/portfolio-setup.git
 
 ## Built With
 
-- HTML and CSS
-- Bootstrap
-- Node.js
+- HTML
+- CSS
+- JS
+
+## Live Demo
+[Live Demo Link](https://osvaldobc.github.io/osvaldojose.github.io/)
+
+
+### Prerequisites
+
+No prerequisite required
+
 
 ## Authors
 
@@ -18,6 +27,13 @@ git clone git@github.com:OsvaldoBC/portfolio-setup.git
 - Twitter : [@OsvaldoBarrio20](https://twitter.com/OsvaldoBarrio20)
 - GitHub  : [@OsvaldoBC](https://github.com/OsvaldoBC)
 - LinkedIn: [osvaldo-barrios-data-science](https://linkedin.com/in/osvaldo-barrios-data-science)
+
+👤 **R Mauricio Mendoza H**
+
+- GitHub: [GitHub](https://github.com/rbreva)
+- Behance: [Behance](https://www.behance.net/rbreva)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/r-mauricio-mendoza-huerta-0782a9166/)
+
 
 ## 🤝 Contributing
 
