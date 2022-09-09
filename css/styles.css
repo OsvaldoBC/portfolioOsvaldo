@@ -559,6 +559,9 @@ button.form_btn:hover {
   top: 0;
   width: 100%;
   left: 0;
+  background-color: #c1c7d0a6;
+  backdrop-filter: blur(3px);
+  height: 100vh;
 }
 
 .popupcard {
@@ -839,18 +842,18 @@ button.form_btn:hover {
     justify-content: left;
   }
 
-  . popuphidden {
-  width: 100%;
-  height: 100vh;
-  background-color: #c1c7d06a;
-  backdrop-filter: blur(3px);
+  .popuphidden {
+    width: 100%;
+    height: 100vh;
+    background-color: #c1c7d06a;
+    backdrop-filter: blur(3px);
   }
 
   .popupcard {
     overflow-y: scroll;
     width: 90%;
     height: 90vh;
-    margin:auto;
+    margin: auto;
   }
 
   .popimge {
@@ -867,33 +870,33 @@ button.form_btn:hover {
   }
 
   .popdescrip {
-      font-weight: 400;
-      font-size: 15px;
-      line-height: 24px;
-      color: #344563;
-      margin-left: 40px;
-      margin-right: 16px;
-      display: flex;
-      width: 45vh;
-    }
-
-    .popbuttons {
-      float: right;
-    }
-
-    .popsmallbuttons {
-      display: flex;
-      flex-direction: row;
-      align-items: flex-end;
-      margin: 30px 1px 30px 1px;
-    }
-
-    .popbutton-big {
-      margin-left: 1px;
-    }
-
-    .poplinks {
-      gap: 8px;
-      margin-left: 1px;
-    }
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #344563;
+    margin-left: 40px;
+    margin-right: 16px;
+    display: flex;
+    width: 45vh;
   }
+
+  .popbuttons {
+    float: right;
+  }
+
+  .popsmallbuttons {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin: 30px 1px 30px 1px;
+  }
+
+  .popbutton-big {
+    margin-left: 1px;
+  }
+
+  .poplinks {
+    gap: 8px;
+    margin-left: 1px;
+  }
+}
