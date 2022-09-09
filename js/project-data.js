@@ -5,6 +5,7 @@ let projectData = [{
   name: 'Tonic',
   company: ['CANOPY', 'Back End Dev', '2015'],
   description: 'A daily selection of privately personalized reads; no accounts or sign-ups require',
+  popupdescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lo',
   technologies: ['html', 'css', 'javaScript'],
   image:  './img/Snapshoot-Portfolio.png',
   liveURL: 'https://osvaldobc.github.io/osvaldojose.github.io/',
@@ -14,6 +15,7 @@ let projectData = [{
   name: 'Multi-Post-Stories',
   company: ['CANOPY', 'Back End Dev', '2015'],
   description: 'A daily selection of privately personalized reads; no accounts or sign-ups require',
+  popupdescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lo',
   technologies: ['html', 'css', 'javaScript'],
   image:  './img/Snapshoot-project2.png',
   liveURL: 'https://osvaldobc.github.io/osvaldojose.github.io/',
@@ -23,6 +25,7 @@ let projectData = [{
   name: 'Tonic',
   company: ['CANOPY', 'Back End Dev', '2015'],
   description: 'A daily selection of privately personalized reads; no accounts or sign-ups require',
+  popupdescription: 'Lorem Ipsum is simply dummy text of the printing and or sign-ups requiretypes',
   technologies: ['html', 'css', 'javaScript'],
   image:  './img/Snapshoot-project3.png',
   liveURL: 'https://osvaldobc.github.io/osvaldojose.github.io/',
@@ -32,6 +35,7 @@ let projectData = [{
   name: 'Multi-Post-Stories',
   company: ['CANOPY', 'Back End Dev', '2015'],
   description: 'A daily selection of privately personalized reads; no accounts or sign-ups require',
+  popupdescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lo',
   technologies: ['html', 'css', 'javaScript'],
   image:  './img/Snapshoot-project4.png',
   liveURL: 'https://osvaldobc.github.io/osvaldojose.github.io/',
@@ -111,8 +115,8 @@ for (let index = 0; index < modalButton.length; index += 1) {
   modalButton[index].addEventListener('click', (e) => {
     const pos = e.target.getAttribute('data-index');
     modal.querySelector('.poptitle').innerHTML = projectData[pos].name;
-    modal.querySelector('.popimge-mob').src = projectData[pos].image;
-    modal.querySelector('.popdescrip').innerHTML = projectData[pos].description;
+    modal.querySelector('.popimge').src = projectData[pos].image;
+    modal.querySelector('.popdescrip').innerHTML = projectData[pos].popupdescription;
     modal.querySelector('.live').href = projectData[pos].liveURL;
     modal.querySelector('.source').href = projectData[pos].sourceURL;
     modal.style.display = 'block';
