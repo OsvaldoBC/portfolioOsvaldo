@@ -244,10 +244,8 @@ ul {
 }
 
 .container1 {
-  width: auto;
-  height: auto;
-  margin-bottom: 40px;
-  margin-left: 50px;
+    margin: 25px;
+    padding: 20px;
 }
 
 .containerobj {
@@ -574,6 +572,7 @@ button.form_btn:hover {
   gap: 12px;
   height: auto;
   overflow-y: scroll;
+  margin: 20px;
 }
 
 .poptitle {
@@ -684,7 +683,6 @@ button.form_btn:hover {
 
   .contenido1 {
     display: flex;
-    width: 50%;
     height: auto;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -692,10 +690,10 @@ button.form_btn:hover {
   }
 
   .container1 {
-    display: flex;
-    width: auto;
-    height: auto;
-    margin-bottom: 40px;
+    margin: 25px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1050px;
   }
 
   .about-me {
@@ -839,7 +837,7 @@ button.form_btn:hover {
 
   .popimg {
     display: flex;
-    justify-content: left;
+    justify-content: center;
   }
 
   .popuphidden {
@@ -853,7 +851,7 @@ button.form_btn:hover {
     overflow-y: scroll;
     width: 90%;
     height: 90vh;
-    margin: auto;
+    margin: 30px auto;
   }
 
   .popimge {
@@ -865,8 +863,9 @@ button.form_btn:hover {
   }
 
   .sect {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 2fr 1fr;
   }
 
   .popdescrip {
@@ -876,8 +875,6 @@ button.form_btn:hover {
     color: #344563;
     margin-left: 40px;
     margin-right: 16px;
-    display: flex;
-    width: 45vh;
   }
 
   .popbuttons {
