@@ -63,6 +63,7 @@
 
 body {
   font-family: 'poppins', sans-serif;
+  background-color: #E5E5E5;
 }
 
 .modal-buttons {
@@ -176,20 +177,21 @@ body {
 .container {
   display: flex;
   width: 100%;
-  background-image: url(../img/header-shapes.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
   height: 780px;
 }
 
 .hero {
   display: flex;
-  width: 100%;
+  width: auto%;
   height: auto;
+  background-image: url(../img/header-shapes.png);
+  background-repeat: no-repeat;
+  background-position: center;
   flex-direction: column;
   justify-content: center;
   overflow: hidden;
+  background-color: white;
+  border-radius: 0 0 0 60px;
 }
 
 .title {
@@ -246,6 +248,7 @@ ul {
 .container1 {
   margin: 25px;
   padding: 20px;
+  background-color:white;
 }
 
 .containerobj {
@@ -276,6 +279,7 @@ ul {
   background-color: #fff;
   flex-direction: column;
   justify-content: space-around;
+  border-radius: 0 60px 0 0px;
 }
 
 .portfolio {
@@ -659,6 +663,19 @@ button.form_btn:hover {
     width: auto;
   }
 
+  .hero {
+    display: flex;
+    width: auto%;
+    height: auto;
+    background-image: url(../img/header-bg.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 0 0 0 60px;
+  }
+
   .portfolio1 {
     display: flex;
     width: auto;
@@ -743,10 +760,6 @@ button.form_btn:hover {
     display: flex;
     color: white;
     font-size: 40px;
-  }
-
-  .hero {
-    height: 916px;
   }
 
   .form_btn {
