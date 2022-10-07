@@ -2,42 +2,42 @@
 // data mmobilr version//
 
 let projectData = [{
-  name: 'Tonic',
-  company: ['CANOPY', 'Back End Dev', '2015'],
-  description: 'A daily selection of privately personalized reads; no accounts or sign-ups require',
-  popupdescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lo',
+  name: 'Traffic Conference Page',
+  company: ['MICROVERSE', 'Front End Dev', '2022'],
+  description: 'Congress of Online Advertising. This is a capstone project for the first module at Microverse. It is based on an online website for a conference. It contains information about the event and the speakers. It is created using javaScript, html and CSS.',
+  popupdescription: 'Congress of Online Advertising. This is a capstone project for the first module at Microverse. It is based on an online website for a conference. It contains information about the event and the speakers. It is created using javaScript, html and CSS.',
   technologies: ['html', 'css', 'javaScript'],
-  image:  './img/Snapshoot-Portfolio.png',
-  liveURL: 'https://osvaldobc.github.io/osvaldojose.github.io/',
-  sourceURL: 'https://github.com/OsvaldoBC/portfolio-setup',
+  image: './img/project1desktop.png',
+  liveURL: 'https://osvaldobc.github.io/trafficConferencePage/',
+  sourceURL: 'https://github.com/OsvaldoBC/trafficConferencePage',
 },
-  {
+{
+  name: 'To Do List App',
+  company: ['MICROVERSE', 'Front End Dev', '2022'],
+  description: 'It is a simple web page that was built using webpack and served by a webpack dev server , is an App to organize daily tasks. They can be added, edited marked as completed and deleted them. It also allows you to select and delete all the tasks that are completed. It is created using javaScript ES6 language.',
+  popupdescription: 'It is a simple web page that was built using webpack and served by a webpack dev server , is an App to organize daily tasks. They can be added, edited marked as completed and deleted them. It also allows you to select and delete all the tasks that are completed. It is created using javaScript ES6 language.',
+  technologies: ['html', 'css', 'javaScript'],
+  image: './img/project2desktop.png',
+  liveURL: 'https://osvaldobc.github.io/to-do-list-OB/dist/',
+  sourceURL: 'https://github.com/OsvaldoBC/to-do-list-OB',
+},
+{
+  name: 'Awesome Books',
+  company: ['MICROVERSE', 'Full Stack Dev', '2022'],
+  description: 'This is a single-page application to add and remove information about books and store the data at local storage. It is created using JavaScript ES6 language.',
+  popupdescription: 'This is a single-page application to add and remove information about books and store the data at local storage. It is created using JavaScript ES6 language.',
+  technologies: ['html', 'css', 'javaScript'],
+  image: './img/project3desktop.png',
+  liveURL: 'https://osvaldobc.github.io/awesomeBooksES6OB/',
+  sourceURL: 'https://github.com/OsvaldoBC/awesomeBooksES6OB',
+},
+{
   name: 'Multi-Post-Stories',
   company: ['CANOPY', 'Back End Dev', '2015'],
   description: 'A daily selection of privately personalized reads; no accounts or sign-ups require',
   popupdescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lo',
   technologies: ['html', 'css', 'javaScript'],
-  image:  './img/Snapshoot-project2.png',
-  liveURL: 'https://osvaldobc.github.io/osvaldojose.github.io/',
-  sourceURL: 'https://github.com/OsvaldoBC/portfolio-setup',
-},
-    {
-  name: 'Tonic',
-  company: ['CANOPY', 'Back End Dev', '2015'],
-  description: 'A daily selection of privately personalized reads; no accounts or sign-ups require',
-  popupdescription: 'Lorem Ipsum is simply dummy text of the printing and or sign-ups requiretypes',
-  technologies: ['html', 'css', 'javaScript'],
-  image:  './img/Snapshoot-project3.png',
-  liveURL: 'https://osvaldobc.github.io/osvaldojose.github.io/',
-  sourceURL: 'https://github.com/OsvaldoBC/portfolio-setup',
-},
-  {
-  name: 'Multi-Post-Stories',
-  company: ['CANOPY', 'Back End Dev', '2015'],
-  description: 'A daily selection of privately personalized reads; no accounts or sign-ups require',
-  popupdescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lo',
-  technologies: ['html', 'css', 'javaScript'],
-  image:  './img/Snapshoot-project4.png',
+  image: './img/Snapshoot-project4.png',
   liveURL: 'https://osvaldobc.github.io/osvaldojose.github.io/',
   sourceURL: 'https://github.com/OsvaldoBC/portfolio-setup',
 },
@@ -46,7 +46,7 @@ let projectData = [{
 // fill dynamic mobile version"
 
 for (let i = 0; i < projectData.length; i++) {
-  console.log(projectData [i]);
+  console.log(projectData[i]);
   let card1 = document.createElement('div');
   card1.classList.add('container1');
 
@@ -58,16 +58,16 @@ for (let i = 0; i < projectData.length; i++) {
 
   let cardh2 = document.createElement('h2');
   cardh2.classList.add('tonic');
-  cardh2.textContent = projectData [i].name;
+  cardh2.textContent = projectData[i].name;
   contenido1.appendChild(cardh2);
 
   const buttons = document.createElement('ul');
   buttons.classList.add('buttons');
 
-  for (let u = 0; u < projectData [i].technologies.length; u += 1) {
+  for (let u = 0; u < projectData[i].technologies.length; u += 1) {
     const tagLi = document.createElement('li');
     tagLi.classList.add('int-button');
-    tagLi.textContent = projectData [i].technologies[u];
+    tagLi.textContent = projectData[i].technologies[u];
 
     buttons.appendChild(tagLi);
   }
@@ -75,19 +75,19 @@ for (let i = 0; i < projectData.length; i++) {
   const info = document.createElement('ul');
   info.classList.add('info');
 
-  for (let u1 = 0; u1 < projectData [i].company.length; u1 += 1) {
+  for (let u1 = 0; u1 < projectData[i].company.length; u1 += 1) {
     const tagLi1 = document.createElement('li');
     tagLi1.classList.add('tonic-detail2');
-    tagLi1.textContent = projectData [i].company[u1];
+    tagLi1.textContent = projectData[i].company[u1];
     info.appendChild(tagLi1);
   }
 
   let cardp = document.createElement('p');
   cardp.classList.add('project-detail');
-  cardp.textContent = projectData [i].description;
+  cardp.textContent = projectData[i].description;
 
   let image = document.createElement('img');
-  image.src = projectData [i].image;
+  image.src = projectData[i].image;
   image.alt = 'imagen';
 
   const button = document.createElement('button');
