@@ -3,7 +3,7 @@
 
 ## Getting Started
 The steps to clone and the project locally is :
-git clone git@github.com:OsvaldoBC/portfolio-setup.git
+git clone git@github.com:OsvaldoBC/portfolioOsvaldo.git
 
 ## Built With
 
@@ -12,7 +12,7 @@ git clone git@github.com:OsvaldoBC/portfolio-setup.git
 - JS
 
 ## Live Demo
-[Live Demo Link](https://osvaldobc.github.io/osvaldojose.github.io/)
+[Live Demo Link](https://osvaldobc.github.io/portfolioOsvaldo/)
 
 
 ### Prerequisites
