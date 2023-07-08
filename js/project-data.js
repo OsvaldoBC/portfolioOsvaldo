@@ -32,14 +32,14 @@ let projectData = [{
   sourceURL: 'https://github.com/OsvaldoBC/awesomeBooksES6OB',
 },
 {
-  name: 'Multi-Post-Stories',
-  company: ['CANOPY', 'Back End Dev', '2015'],
-  description: 'A daily selection of privately personalized reads; no accounts or sign-ups require',
-  popupdescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lo',
-  technologies: ['html', 'css', 'javaScript'],
-  image: './img/Snapshoot-project4.png',
+  name: 'My Expenses App',
+  company: ['MICROVERSE', 'Full Stack Dev', '2023'],
+  description: 'My expenses is a web application where you can create an user and track your expenses divided by category',
+  popupdescription: 'App created with Ruby on Rails. It is an app where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what',
+  technologies: ['html', 'css', 'Ruby on Rails'],
+  image: './img/project4desktop.png',
   liveURL: 'https://osvaldobc.github.io/osvaldojose.github.io/',
-  sourceURL: 'https://github.com/OsvaldoBC/portfolio-setup',
+  sourceURL: 'https://github.com/OsvaldoBC/budget-ror',
 },
 ];
 
